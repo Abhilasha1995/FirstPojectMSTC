@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<style>
+		.rec
+		{
+			border-radius: : 20px;
+			background-color: red;
+
+		}
+		.clic
+		{
+			border-width: 4px;
+			border-style: dashed;
+			border-color: cyan;
+
+		}
+	</style>
+
+	</head>
+<body>
+	<form action="">
+		<input type="text" class="cli" >
+		<input type="text">
+		<input type="button" value="LogIn" class="re" >
+		<br/>
+		<input type="button" value="Click Me" onclick="func()" ondblclick="func1()">
+		<input type="button" value="Hover On Me"onmouseover="func2()" onmouseout="func3()">
+	</form>
+	<script>
+		function func()
+		{
+				var colorChange = document.querySelector(".cli");
+				colorChange.classList.add("clic");
+		}
+			function func1()
+		{
+				var colorChange = document.querySelector(".cli");
+				colorChange.classList.remove("clic");
+		}
+		function func2()
+		{
+				var colorChange = document.querySelector(".re");
+				colorChange.classList.add("rec");
+		}
+		function func3()
+		{
+				var colorChange = document.querySelector(".re");
+				colorChange.classList.remove("rec");
+		}
+
+	</script>
+</body>
+</html>
